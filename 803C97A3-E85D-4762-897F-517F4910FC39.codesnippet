@@ -3,27 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>alertbasic</string>
+	<string>completion</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>let alert = UIAlertController(title: "&lt;#title#&gt;", message: "&lt;#message#&gt;", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil));
-                self.present(alert, animated: true, completion: nil)
-</string>
+	<string>completionHandler: (_ result: [String: Any], _ error: Error) -&gt; Void </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>0820101E-0516-447E-B44A-89F4B7102437</string>
+	<string>803C97A3-E85D-4762-897F-517F4910FC39</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>A basic alert with one OK button that does nothing</string>
+	<string>Adds a completion handler parameter example</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Alert Basic</string>
+	<string>Completion handler</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
