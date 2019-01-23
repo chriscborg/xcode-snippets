@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>post</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeExpression</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        //declare parameter as a dictionary which contains string as key and value combination. considering inputs are valid
+        let parameters = ["&lt;# key 1 #&gt;": &lt;# value1 #&gt;, "&lt;# key2 #&gt;": &lt;# value2 #&gt;]
+        
+        //create the url with URL
+
+        let url = URL(string: "&lt;# url string #&gt;")! //change the url
+        
+        //create the session object
+        let session = URLSession.shared
+        
+        //now create the URLRequest object using the url object
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST" //set http method as POST
+        
+        do {
+            request.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: .prettyPrinted) // pass dictionary to nsdata object and set it as request body
+        } catch let error {
+            print(error.localizedDescription)
+        }
+        
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        let token = &lt;# authentication token #&gt;
+        request.addValue(token, forHTTPHeaderField: "Authorization")
+        
+        //create dataTask using the session object to send data to the server
+        let task = session.dataTask(with: request as URLRequest, completionHandler: { data, response, error in
+            DispatchQueue.main.async {
+                
+                guard error == nil else {
+                    &lt;# show an error #&gt;
+                    return
+                }
+    
+                guard let data = data else {
+                    return
+                }
+            
+                &lt;# do something with the data #&gt;
+            }
+        })
+        task.resume()
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3E06D86B-5ADD-4773-A59B-E64EFA00B43E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Performs a post request with json body</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>URL Post Request</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

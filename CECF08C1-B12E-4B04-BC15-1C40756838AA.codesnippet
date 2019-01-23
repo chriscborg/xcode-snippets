@@ -3,26 +3,31 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>completion</string>
+	<string>activityindicator</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>completionHandler: (_ result: [String: Any], _ error: Error) -&gt; Void </string>
+	<string>        self.activityIndicator = UIActivityIndicatorView(style: .whiteLarge)
+        self.activityIndicator.color = UIColor.black
+        self.activityIndicator.center = self.view.center
+        self.activityIndicator.startAnimating();
+        self.activityIndicator.isHidden = false
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>803C97A3-E85D-4762-897F-517F4910FC39</string>
+	<string>CECF08C1-B12E-4B04-BC15-1C40756838AA</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Adds a completion handler parameter example</string>
+	<string>Creates and shows an activity indicator in the middle of the screen</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Completion handler</string>
+	<string>Activity Indicator</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

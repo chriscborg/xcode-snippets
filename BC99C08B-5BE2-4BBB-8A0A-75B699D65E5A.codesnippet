@@ -3,26 +3,31 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>completion</string>
+	<string>webviewallow</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>completionHandler: (_ result: [String: Any], _ error: Error) -&gt; Void </string>
+	<string>    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -&gt; Void) {
+        if let urlString = navigationAction.request.url?.absoluteString {
+            &lt;# do something #&gt;
+        }
+        
+        decisionHander(.allow) //or .cancel
+    }
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>803C97A3-E85D-4762-897F-517F4910FC39</string>
+	<string>BC99C08B-5BE2-4BBB-8A0A-75B699D65E5A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Adds a completion handler parameter example</string>
+	<string>Intercept request and gets url</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Completion handler</string>
+	<string>Web View Should Allow Url</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

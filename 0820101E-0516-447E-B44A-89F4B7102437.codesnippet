@@ -6,7 +6,7 @@
 	<string>alertbasic</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>let alert = UIAlertController(title: "&lt;#title#&gt;", message: "&lt;#message#&gt;", preferredStyle: .alert)
@@ -16,7 +16,9 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>0820101E-0516-447E-B44A-89F4B7102437</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>A basic alert with one OK button that does nothing</string>
 	<key>IDECodeSnippetTitle</key>

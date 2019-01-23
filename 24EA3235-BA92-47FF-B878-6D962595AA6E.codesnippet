@@ -3,26 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>completion</string>
+	<string>webviewfinish</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>completionHandler: (_ result: [String: Any], _ error: Error) -&gt; Void </string>
+	<string>    func webView(_ webView: WKWebView,
+                 didFinish navigation: WKNavigation!) {
+        &lt;#do something here#&gt;
+    }
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>803C97A3-E85D-4762-897F-517F4910FC39</string>
+	<string>24EA3235-BA92-47FF-B878-6D962595AA6E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Adds a completion handler parameter example</string>
+	<string>To do something on finish loading of the webview</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Completion handler</string>
+	<string>Web View Finish Delegate</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

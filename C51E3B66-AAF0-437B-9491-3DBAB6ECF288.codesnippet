@@ -3,26 +3,30 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>completion</string>
+	<string>webviewload</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>completionHandler: (_ result: [String: Any], _ error: Error) -&gt; Void </string>
+	<string>self.webView = WKWebView(frame: self.view.frame);
+webView.navigationDelegate = self;
+self.view.addSubview(self.webView)
+webView.load(URLRequest(url: url))
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>803C97A3-E85D-4762-897F-517F4910FC39</string>
+	<string>C51E3B66-AAF0-437B-9491-3DBAB6ECF288</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Adds a completion handler parameter example</string>
+	<string>Create webview and load a url</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Completion handler</string>
+	<string>WebView Load Url</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
