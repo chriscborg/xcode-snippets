@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>completionHandler: (_ result: [String: Any], _ error: Error) -&gt; Void </string>
+	<string>completionHandler: (_ &lt;# result #&gt;: &lt;# type #&gt;, _ error: Error?) -&gt; Void </string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>803C97A3-E85D-4762-897F-517F4910FC39</string>
 	<key>IDECodeSnippetLanguage</key>
